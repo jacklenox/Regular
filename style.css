@@ -1,0 +1,54 @@
+body {
+	font-family: 'PT Serif', serif;
+	padding: 0;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body h1, body h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.regular-container article .content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.big-image {
+	height: 420px;
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: flex;
+}
+
+.big-image .text {
+	width: 200px;
+	height: 100px;
+	margin: auto;
+	color: white;
+}
+
+.example-enter {
+	transform: translate3d(0, 50%, 0);
+}
+
+.example-enter.example-enter-active {
+	transform: translate3d(0, 0, 0);
+	transition: all 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform: scale(0.8) translate3d(0, -10%, 0);
+  transition: all 300ms ease-in;
+}

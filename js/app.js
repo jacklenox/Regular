@@ -66,9 +66,11 @@ var Regular = React.createClass({
 							</div>
 						</article>
 						<article>
-							<div className="big-image" data-post-id={nextPost.previous_post} onClick={this.handleChangePost} style={{ backgroundImage: 'url(' + nextFeaturedImage + ')' }}>
-								<div className="text">
-									<h2>Read Next</h2>
+							<div className="big-image" style={{ backgroundImage: 'url(' + nextFeaturedImage + ')' }}>
+								<div className="fader" data-post-id={nextPost.previous_post} onClick={this.handleChangePost}>
+									<div className="text">
+										<h2>Read Next</h2>
+									</div>
 								</div>
 							</div>
 						</article>

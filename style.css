@@ -24,7 +24,6 @@ body h1, body h2 {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	display: flex;
 }
 
 .big-image .text {
@@ -32,6 +31,14 @@ body h1, body h2 {
 	height: 100px;
 	margin: auto;
 	color: white;
+}
+
+.big-image .fader {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	cursor: pointer;
 }
 
 .example-enter {
@@ -44,11 +51,11 @@ body h1, body h2 {
 }
 
 .example-leave {
-  opacity: 1;
+	opacity: 1;
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.01;
-  transform: scale(0.8) translate3d(0, -10%, 0);
-  transition: all 300ms ease-in;
+	opacity: 0.01;
+	transform: scale(0.8) translate3d(0, -10%, 0);
+	transition: all 300ms ease-in;
 }
